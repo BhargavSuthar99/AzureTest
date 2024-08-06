@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Product Brand Name</title>
+</head>
+<body>
+    <div id="api"></div>
+    <script>
+        debugger;
+        console.log("window.SETTINGS",window.SETTINGS);
+        console.log("window.CONTENT",window.CONTENT)
+    $.get("https://engageapi.azurewebsites.net/api/Client/GetClientBranding?clientId=4", function(data, status){
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+    </script>
+</body>
+</html>
